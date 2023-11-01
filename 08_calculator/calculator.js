@@ -22,12 +22,16 @@ const multiply = function(range) {
   return answer;
 };
 
-const power = function() {
-	
+const power = function(x, y) {
+	return x**y;
 };
 
-const factorial = function() {
-	
+const factorial = function(x) {
+	answer = 1;
+  for (let i=x;i>0;i--) {
+    answer *=i;
+  }
+  return answer;
 };
 
 // Do not edit below this line
