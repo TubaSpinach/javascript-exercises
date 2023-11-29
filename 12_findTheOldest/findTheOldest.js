@@ -1,5 +1,5 @@
 const findTheOldest = function(people) {
-    ages = people.map((x)=>x.yearOfDeath - x.yearOfBirth)
+    ages = people.map((x)=>x.yearOfDeath ? x.yearOfDeath - x.yearOfBirth : 2023 - x.yearOfBirth )
     oldestAge = Math.max(...ages)
     oldestIndex = ages.findIndex((x)=> x == oldestAge)
     console.log(ages,oldestAge,oldestIndex)
